@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>Loading...</title>
-  <meta http-equiv="refresh" content="1;url=https://www.t7yml.com/?ch=a240f58de2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লোড হচ্ছে...</title>
+  <meta http-equiv="refresh" content="5;url=https://www.t7yml.com/?ch=a240f58de2">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #ffffff, #f2f2f2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+      text-align: center;
+    }
+
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 18px;
+      padding: 0 20px;
+    }
+  </style>
   <script>
-    // 可选：JS跳转，延迟更灵活
+    // 双重保险跳转
     setTimeout(function() {
       window.location.href = "https://www.t7yml.com/?ch=a240f58de2";
-    }, 1000); // 延迟1秒
+    }, 5000);
   </script>
 </head>
 <body>
-  <p>লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+  <div class="loader"></div>
+  <div class="message">আপনি গন্তব্যে যাচ্ছেন...</div>
 </body>
 </html>
